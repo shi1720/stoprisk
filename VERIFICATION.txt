@@ -1,0 +1,24 @@
+Verification record | 17 October 2026
+
+12 automated tests passed. Independent oracles include exact rational attack
+sequence probabilities, separately solved linear programs, enumerated binomial
+tail probabilities, rectangle corners, and 60-digit decimal arithmetic.
+
+The primary experiment completed 240,000 evaluation datasets. All retained
+main-run inputs and results match results/run_manifest.json hashes. Synthetic
+counts are retained, clearly separated from aggregate-derived external counts.
+
+Exact coverage calculations enumerate 2,025 joint count tables per two-action
+condition and 5,151 tables per one-action bootstrap condition.
+
+The manuscript compiled successfully with local Tectonic and the desktop
+editor compiler. Every page of the final 10-page rendering was visually checked.
+The final PDF has Shivam Gupta author metadata, four figures, three tables,
+and linked references. There are no undefined citations or placeholders.
+
+The local TeX log has an underfull line in the bibliography, with no clipped
+content, overfull boxes, missing figures, or compilation errors.
+
+This verification checks computational and rendering properties. It is not
+independent peer review, a proof of global novelty, confirmation of real-world
+sampling assumptions, or a guarantee of publication acceptance.

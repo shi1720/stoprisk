@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stoprisk"
+version = "0.1.0"
+description = "Finite-evidence envelopes for a specified shutdown-control model"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26", "scipy>=1.12"]
+
+[project.optional-dependencies]
+research = ["matplotlib>=3.8", "pandas>=2.2", "pytest>=8"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

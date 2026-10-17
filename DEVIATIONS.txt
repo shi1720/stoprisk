@@ -1,0 +1,12 @@
+1. After the primary simulation, an optional block accelerator and its
+   bounded-switch proof were developed. Its timing experiment is exploratory;
+   it does not alter the prespecified interval comparison or simulation data.
+
+2. Source review showed the upstream aggregate table used an outcome-dependent
+   viability exclusion. The secondary-analysis family correction was expanded
+   from the eight retained cells to the full fixed 24-cell upstream design.
+   A union bound over the original family permits post hoc subset reporting
+   under the sampling assumptions. This correction was made after the initial
+   eight-cell results were seen and before manuscript creation. The synthetic
+   primary protocol and its results are unchanged. Missing raw logs and
+   unverified within-cell sampling remain separate limitations.

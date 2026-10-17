@@ -1,0 +1,42 @@
+StopRisk computational protocol, frozen before the main experimental run
+17 October 2026. This is an internal prospective record, not a registered study.
+
+Question: How do finite counts constrain harm-before-catch probability when an
+attacker chooses adaptively among a fixed, tested menu with stationary kernels?
+
+Primary controlled experiment: fixed n per action in {50,200,1000,5000},
+10000 independently simulated evaluation datasets per condition, seed 1720406.
+Horizon 100. Six prespecified two-action menus (u,c):
+balanced [(0.02,0.08),(0.01,0.02)]
+rare [(0.0002,0.001),(0.0001,0.0001)]
+zero-harm [(0,0.01),(0,0.1)]
+switching [(0.05,0.5),(0.01,0.01)]
+low-catch [(0.01,0.0001),(0.005,0.0002)]
+asymmetric [(0.001,0.3),(0.03,0.05)].
+Compare separately calibrated 95% simultaneous factor rectangles and hazard
+rectangles. Primary endpoints: coverage of true optimal finite-horizon risk,
+mean interval width, mean signed plug-in error, frequency of zero plug-in
+estimate when true risk is positive. Report Monte Carlo standard errors.
+No claim of uniform empirical superiority is a success criterion.
+
+Exact verification: enumerate all two-action count tables for n=8 per action
+and evaluate coverage at horizons 1,5,20 for the same six menus. Include
+single-policy exact conditional percentile-bootstrap upper-bound coverage
+for p=(u,c,continue), n=100, horizon 100, across the same action kernels.
+This bootstrap baseline is conditional on the decisive sample size and
+re-estimates r, while holding the empirical decisive frequency fixed.
+It is explicitly NOT a replication of ControlArena's raw-row bootstrap.
+
+Secondary data: pinned public factorial CSV at commit
+3e420c9a8180163eafaf35db17da0973d49fbd4a. Retain monitors with both attacker
+rows, 100 observations/mode as documented upstream, and constant zero honest
+scores in both rows. This defines four monitor panels, eight cells, common
+threshold zero. Reconstruct mutually exclusive counts from full-precision
+published rates, requiring integer consistency within 1e-8. No raw transcripts
+are available in the checkout. Counts are aggregate-derived, not independently
+verified model outcomes. Apply family correction across all eight cells.
+Report model-conditional intervals, not validated deployment guarantees.
+
+Implementation pilots: unit tests and inspection of source aggregate tables
+precede this record. No main Monte Carlo or exact coverage result was seen.
+Any subsequent deviation must be recorded in DEVIATIONS.txt.

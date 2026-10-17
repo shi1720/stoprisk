@@ -1,0 +1,14 @@
+{
+  "u": [
+    0.05,
+    0.01
+  ],
+  "c": [
+    0.5,
+    0.01
+  ],
+  "switch_remaining_horizon": 4,
+  "horizon10_adaptive": 0.13766610556115022,
+  "horizon10_best_fixed": 0.09146359655622655,
+  "horizon100_adaptive": 0.44118937778734574
+}
